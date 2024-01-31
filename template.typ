@@ -1,11 +1,13 @@
 #let textL = 1.8em
 #let textM = 1.6em
+#let fontSerif = ("Noto Serif", "Noto Serif CJK JP")
+#let fontSan = ("Noto Sans", "Noto Sans CJK JP")
 
 #let project(title: "", author: "", major: "", advisor: none, year: none, body) = {
   set document(author: author, title: title)
 
   // Font
-  set text(font: ("Noto Sans", "Noto Sans CJK JP"), lang: "ja")
+  set text(font: fontSerif, lang: "ja")
 
   // Heading
   set heading(numbering: (..nums) => {
@@ -16,9 +18,10 @@
       h(1em)
     }
   })
+  show heading: set text(font: fontSan, weight: "medium", lang: "ja")
   show heading.where(level: 1): it => {
     pagebreak()
-    set text(weight: "bold", size: 1.4em)
+    set text(size: 1.4em)
     pad(top: 3em, bottom: 2.5em)[
       #it
     ]
@@ -30,16 +33,18 @@
   show figure.caption: it => pad(top: 0.6em, it)
 
   // Outline
+  show outline.entry: set text(font: fontSan, lang: "ja")
   show outline.entry.where(
     level: 1
   ): it => {
     v(0.2em)
-    strong(it)
+    set text(weight: "semibold")
+    it
   }
 
   align(center)[
     #v(6em)
-    
+
     #block(text(textM)[#year 年度])
     #v(2em)
     #block(text(textM, "筑波大学情報学群情報科学類"))
@@ -73,9 +78,9 @@
 
 #let abstract(body) = {
   v(180pt)
-  
+
   align(center)[
-    #text(size: textM, tracking: 2em, weight: "bold")[要旨]
+    #text(font: fontSan, size: textM, tracking: 2em, weight: "medium")[要旨]
   ]
 
   v(2em)

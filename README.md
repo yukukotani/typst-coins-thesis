@@ -4,6 +4,6 @@
 
 ## Example
 
-オンラインエディタでサンプルを見たりフォークしたりできます。本リポジトリの main.pdf[./main.pdf] にもサンプルの出力があります。
+オンラインエディタでサンプルを見たりフォークしたりできます。本リポジトリの [main.pdf](./main.pdf) にもサンプルの出力があります。
 
 https://typst.app/project/r-McyFP1wMu4Sq7FK5yTpf

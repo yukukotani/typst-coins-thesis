@@ -42,6 +42,10 @@
 
 本テンプレートはTypst #footnote[https://typst.app/] 用に作られている。
 
+#heading(numbering: none)[謝辞]
+
+ありがとうございます
+
 #[
   #set text(lang: "en")
   #bibliography(title: "参考文献", style:"ieee", "bib.yaml")

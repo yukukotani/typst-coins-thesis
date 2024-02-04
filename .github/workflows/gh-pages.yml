@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: GitHub Pages
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}main.pdf
     permissions:
       pages: write

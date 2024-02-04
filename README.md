@@ -4,6 +4,6 @@
 
 ## Example
 
-オンラインエディタでサンプルを見たりフォークしたりできます。本リポジトリの [main.pdf](./main.pdf) にもサンプルの出力があります。
+[オンラインエディタ](https://typst.app/project/r-McyFP1wMu4Sq7FK5yTpf)でサンプルを見たりフォークしたりできます。
 
-https://typst.app/project/r-McyFP1wMu4Sq7FK5yTpf
+本リポジトリの[GitHub Pages](https://yukukotani.github.io/typst-coins-thesis/main.pdf)にもサンプルの出力があります。
